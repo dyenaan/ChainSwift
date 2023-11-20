@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "hackverify_backend": {
+      "main": "src/hackverify_backend/main.mo",
+      "type": "motoko"
+    },
+    "hackverify_frontend": {
+      "dependencies": [
+        "hackverify_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/hackverify_frontend/src/index.html"
+      },
+      "source": [
+        "src/hackverify_frontend/assets",
+        "dist/hackverify_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
