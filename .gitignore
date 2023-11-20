@@ -16,6 +16,6 @@ src/declarations/
 # frontend code
 node_modules/
 dist/
-
+package-lock.json
 # environment variables
 .env
